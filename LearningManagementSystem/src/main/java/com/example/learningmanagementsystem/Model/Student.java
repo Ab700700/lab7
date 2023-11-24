@@ -15,7 +15,7 @@ public class Student  {
     @NotEmpty
     private String ID;
     @NotEmpty
-    @Pattern(regexp = "[a-zA-Z\n]+", message = "Name should only contain letters")
+    @Pattern(regexp = "[a-zA-Z\s]+", message = "Name should only contain letters")
     private String name;
     @NotNull
     @Positive
